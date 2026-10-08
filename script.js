@@ -1,10 +1,9 @@
-// Theme toggle: remembers the visitor's choice, otherwise follows the system.
+// Theme toggle: light by default, remembers the visitor's choice.
 (function () {
   var root = document.documentElement;
   var btn = document.getElementById('themeToggle');
   btn.addEventListener('click', function () {
-    var current = root.dataset.theme ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var current = root.dataset.theme || 'light';
     var next = current === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
     try { localStorage.setItem('theme', next); } catch (e) {}
