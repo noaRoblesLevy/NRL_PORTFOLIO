@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noa Robles Levy | Portfolio</title>
+<meta name="description" content="Noa Robles Levy: AI and transformation consultant and Infrastructure & Security student in Antwerp. Production software, network engineering, security tooling and quantitative research.">
+<meta name="author" content="Noa Robles Levy">
+<meta property="og:title" content="Noa Robles Levy | Portfolio">
+<meta property="og:description" content="Production software, network engineering, security tooling and quantitative research.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Apply the saved theme before first paint to avoid a flash.
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Back to top">NRL<span>.</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow"><span class="dot"></span> Antwerp, Belgium · open to internships</p>
+        <h1>Noa Robles Levy</h1>
+        <p class="lede">
+          AI &amp; transformation consultant and Infrastructure &amp; Security student.
+          I build software that runs in production, design networks that survive failure,
+          and research markets with the same discipline.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="https://github.com/noaRoblesLevy" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/noa-robles-levy-613924342" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="monogram" aria-hidden="true">NRL</div>
+        <dl class="facts">
+          <div><dt>Now</dt><dd>AI &amp; Transformation Consultant, BEEGO</dd></div>
+          <div><dt>Studying</dt><dd>Applied Computer Science, Infrastructure &amp; Security, KdG</dd></div>
+          <div><dt>Next</dt><dd>Bachelor of Mathematics, KU Leuven (2027)</dd></div>
+          <div><dt>Languages</dt><dd>Dutch, English, French</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="wrap stats">
+      <div class="stat"><b>2</b><span>systems in production</span></div>
+      <div class="stat"><b>2,105</b><span>installation tasks managed by software I built</span></div>
+      <div class="stat"><b>20+</b><span>public repositories</span></div>
+      <div class="stat"><b>3</b><span>virtual internships (JPMorgan, BCG X, Datacom)</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap two-col">
+      <h2 class="section-title">About</h2>
+      <div class="prose">
+        <p>
+          I'm a third-year student in Applied Computer Science (Infrastructure &amp; Security) at
+          Karel de Grote University in Antwerp, and I start a Bachelor of Mathematics at KU Leuven in 2027.
+          Alongside my studies I work as an AI &amp; transformation consultant at BEEGO, where the
+          automations I build run in production for Belgium's largest logistics company.
+        </p>
+        <p>
+          I learn by building. My projects range from a field-operations platform used by a real
+          client, to a NetFlow-based anomaly detector, an OSINT risk platform, a redundant
+          dual-stack enterprise network and a self-built drone flight controller. On the side I do
+          quantitative research on crypto derivatives, where I've learned that most ideas fail and
+          that rigorous out-of-sample testing is what separates an edge from noise.
+        </p>
+        <p>
+          Outside of tech: chess, poker and cybersecurity, all games of incomplete information.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="wrap two-col">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head">
+            <h3>AI &amp; Transformation Consultant</h3>
+            <span class="when">2025 to present</span>
+          </div>
+          <p class="org">BEEGO</p>
+          <p>Design and build process automations for Belgium's largest logistics company. The automations are live in production and replace manual operational work.</p>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Software Developer (Freelance)</h3>
+            <span class="when">2026 to present</span>
+          </div>
+          <p class="org">LookAtMe</p>
+          <p>Sole developer of the production platform that replaced Excel, WhatsApp and photo folders for point-of-sale installations: 200 client locations, 70 articles and 2,105 installation tasks.</p>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Virtual Experience Programs</h3>
+            <span class="when">2025 to 2026</span>
+          </div>
+          <p class="org">JPMorgan Chase · BCG X · Datacom (via Forage)</p>
+          <p>Kafka-based transaction processing in Spring Boot, a churn-prediction model for an energy provider, and a cybersecurity risk assessment for a 1,200-employee retailer.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Selected projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="software">Software</button>
+          <button class="chip" data-filter="network">Networks &amp; Security</button>
+          <button class="chip" data-filter="quant">Quant &amp; Data</button>
+          <button class="chip" data-filter="hardware">Hardware</button>
+        </div>
+      </div>
+
+      <div class="grid featured">
+
+        <article class="card" data-tags="software">
+          <div class="card-top">
+            <span class="badge live">In production</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>LookAtMe Field Operations Platform</h3>
+          <p>Full-stack platform for a signage company whose installers place point-of-sale material at client locations. Installers get a mobile app with photo uploads, the office gets bulk assignment, a review queue and packing lists, and clients get a live progress portal.</p>
+          <ul class="points">
+            <li>Imports the client's Excel distribution list in two steps, with geocoding for Belgium and Luxembourg</li>
+            <li>Approve or reject per address with photo evidence; rejections email the installer in their own language</li>
+            <li>Trilingual (NL, FR, EN) with a typed translation layer; magic-link auth; ZIP exports and a daily retention job</li>
+          </ul>
+          <div class="tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Cloudflare R2</span><span>Vercel</span></div>
+          <div class="links"><span class="muted">Private client code</span></div>
+        </article>
+
+        <article class="card" data-tags="network software">
+          <div class="card-top">
+            <span class="badge">Team project</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>QN-Sentry</h3>
+          <p>OSINT platform that shows an SME its attack surface from an attacker's point of view. Given a domain it runs on-demand scans and produces a dashboard and report with a risk score.</p>
+          <ul class="points">
+            <li>Built the lookalike-domain (phishing) detection, breach exposure and email-security (SPF, DKIM, DMARC) modules</li>
+            <li>Implemented DNS-based domain ownership verification before any scan runs</li>
+            <li>Async scan pipeline with Celery workers, Alembic migrations and GDPR retention</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>Celery</span><span>Redis</span><span>PostgreSQL</span><span>React</span><span>Docker</span></div>
+          <div class="links"><a href="https://github.com/noaRoblesLevy/QN-SENTRY" target="_blank" rel="noopener">Repository →</a></div>
+        </article>
+
+        <article class="card" data-tags="network">
+          <div class="card-top">
+            <span class="badge">Solo project</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>NetSentinel</h3>
+          <p>Self-hosted network security monitoring for SMEs. It learns per-device traffic baselines from NetFlow/IPFIX metadata and raises explainable anomaly alerts, without packet inspection or signatures.</p>
+          <ul class="points">
+            <li>High-throughput flow collector in Go for NetFlow v5/v9 and IPFIX</li>
+            <li>Isolation Forest scoring with plain-language explanations ("150 destinations instead of the usual 12")</li>
+            <li>Device discovery, alert deduplication and Slack, Teams and email notifications</li>
+          </ul>
+          <div class="tags"><span>Go</span><span>Python</span><span>FastAPI</span><span>TimescaleDB</span><span>scikit-learn</span><span>React</span><span>Docker</span></div>
+          <div class="links"><a href="https://github.com/noaRoblesLevy/NetSentinel" target="_blank" rel="noopener">Repository →</a></div>
+        </article>
+
+        <article class="card" data-tags="network">
+          <div class="card-top">
+            <span class="badge">Team project</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>Redundant Enterprise Network</h3>
+          <p>A redundant, dual-stack network for a port-logistics case study, built entirely on virtual machines. Every redundancy mechanism was demonstrated live with a failover test.</p>
+          <ul class="points">
+            <li>Two VyOS routers in a VRRP pair with a default-deny stateful firewall and a DMZ</li>
+            <li>Highly available web tier behind HAProxy and Keepalived, plus OpenVPN remote access</li>
+            <li>IPv4 and IPv6 (SLAAC, ULA) end to end, with DNS and DHCP on the LAN</li>
+          </ul>
+          <div class="tags"><span>VyOS</span><span>Cisco IOS</span><span>VRRP</span><span>IPv6</span><span>HAProxy</span><span>Keepalived</span><span>OpenVPN</span></div>
+          <div class="links"><a href="https://github.com/noaRoblesLevy/NETWERKEN-ISB-TCS" target="_blank" rel="noopener">Repository →</a></div>
+        </article>
+
+        <article class="card" data-tags="quant">
+          <div class="card-top">
+            <span class="badge">Research</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>Crypto Funding-Carry Research</h3>
+          <p>A Python research harness for finding trading edges that survive real costs. After rejecting more than a dozen price-prediction ideas out of sample, it found a market-neutral strategy that harvests the funding-rate spread across 23 perpetual futures.</p>
+          <ul class="points">
+            <li>Long lowest-funding, short highest-funding coins with a rolling BTC beta hedge and volatility targeting</li>
+            <li>Backtested Sharpe 1.34 (2023 to 2025) and 1.60 on held-out 2025 data, validated across two exchanges</li>
+            <li>Monte Carlo pass-rate analysis against prop-firm drawdown rules, plus an automated forward test</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>pandas</span><span>NumPy</span><span>Polars</span><span>Monte Carlo</span><span>Bybit API</span></div>
+          <div class="links"><a href="https://github.com/noaRoblesLevy/Quant-Research" target="_blank" rel="noopener">Repository →</a></div>
+        </article>
+
+        <article class="card" data-tags="software">
+          <div class="card-top">
+            <span class="badge star">★ 23 stars</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>God's Eye</h3>
+          <p>A browser-based spatial-intelligence simulator that fuses live public data onto a photorealistic 3D globe, with night-vision, thermal and CRT post-processing modes.</p>
+          <ul class="points">
+            <li>180+ satellites propagated in real time from TLE data with SGP4</li>
+            <li>7,000+ live aircraft from ADS-B and geolocated public traffic cameras</li>
+            <li>Custom shader pipeline for NVG, FLIR, CRT and cel-shaded display modes</li>
+          </ul>
+          <div class="tags"><span>JavaScript</span><span>CesiumJS</span><span>Google 3D Tiles</span><span>SGP4</span><span>Shaders</span></div>
+          <div class="links"><a href="https://github.com/noaRoblesLevy/GodsEye" target="_blank" rel="noopener">Repository →</a></div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">More projects</h3>
+      <div class="grid compact">
+
+        <article class="card small" data-tags="hardware network">
+          <h4>Long-Range Drone <span class="wip">in progress</span></h4>
+          <p>4-inch quadcopter with a self-designed ESP32 flight controller (PID, DShot), MAVLink telemetry over its own Wi-Fi, a web ground station with live video and YOLO object detection, and a 3.5 s link-loss failsafe.</p>
+          <div class="tags"><span>C++</span><span>ESP32</span><span>MAVLink</span><span>Python</span><span>3D printing</span></div>
+        </article>
+
+        <article class="card small" data-tags="software">
+          <h4>Synapse Survey Platform</h4>
+          <p>Youth-feedback platform with a survey builder, idea submissions and AI moderation via Vertex AI. N-layer ASP.NET Core architecture deployed on Google Cloud with a load balancer, Cloud Armor and CI/CD.</p>
+          <div class="tags"><span>C#</span><span>ASP.NET Core 9</span><span>EF Core</span><span>GCP</span><span>Vertex AI</span></div>
+          <a href="https://github.com/noaRoblesLevy/Synapse-Enquete-Platform" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="quant software">
+          <h4>QUANTPLAT</h4>
+          <p>Local trading research platform on the LEAN engine: grid and walk-forward optimization, Monte Carlo analysis, a local-LLM co-pilot and a Streamlit dashboard.</p>
+          <div class="tags"><span>Python</span><span>LEAN</span><span>Optuna</span><span>Streamlit</span></div>
+          <a href="https://github.com/noaRoblesLevy/QUANTPLAT" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="software">
+          <h4>MATHCRACK</h4>
+          <p>A math-learning web app with an RPG theme: 13 subjects and 48 lessons with theory chapters, practice mode and optional account sync.</p>
+          <div class="tags"><span>JavaScript</span><span>Vite</span><span>Supabase</span></div>
+          <span class="link-row"><a href="https://mathcrack.vercel.app" target="_blank" rel="noopener">Live site →</a> <a href="https://github.com/noaRoblesLevy/MATHCRACK" target="_blank" rel="noopener">Repository →</a></span>
+        </article>
+
+        <article class="card small" data-tags="quant">
+          <h4>StockOracle</h4>
+          <p>Tests whether an ensemble of signals (regression trend, EMA momentum, RSI, MACD, Bollinger) predicts stock direction, with Bayesian shrinkage on hit rates and daily rebalancing.</p>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>pandas</span></div>
+          <a href="https://github.com/noaRoblesLevy/StockOracle" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="software">
+          <h4>JARVIS Voice Assistant</h4>
+          <p>Always-on desktop assistant: wake word, voice activity detection, local speech-to-text, a streaming LLM with tool calls and pipelined text-to-speech.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>Electron</span><span>faster-whisper</span></div>
+        </article>
+
+        <article class="card small" data-tags="quant">
+          <h4>Data Warehouse Refactor</h4>
+          <p>Designed a relational database, refactored it into a star-schema data warehouse with ETL, and extended it with MongoDB for NoSQL analysis.</p>
+          <div class="tags"><span>PostgreSQL</span><span>SQL</span><span>ETL</span><span>MongoDB</span></div>
+          <a href="https://github.com/noaRoblesLevy/Databanken-2" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="software">
+          <h4>Midas Core (JPMorgan Chase)</h4>
+          <p>Transaction-processing service that consumes Kafka events, validates and records transfers with JPA, and calls an external incentive API.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>JPA</span></div>
+          <a href="https://github.com/noaRoblesLevy/JPMorgan_software_engineering" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="quant">
+          <h4>Churn Prediction (BCG X)</h4>
+          <p>End-to-end data science for an energy provider: EDA, feature engineering, a random-forest churn model and an executive summary.</p>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>pandas</span></div>
+          <a href="https://github.com/noaRoblesLevy/BCG_X_Data_Science" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="network">
+          <h4>Cyber Risk Assessment (Datacom)</h4>
+          <p>Threat and vulnerability assessment for a simulated retailer with 85 stores: asset inventory, inherent and residual risk, and mitigation plans.</p>
+          <div class="tags"><span>Risk analysis</span><span>Threat modeling</span></div>
+          <a href="https://github.com/noaRoblesLevy/DATACOM_cybersecurity" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="software network">
+          <h4>OSINT World Map</h4>
+          <p>The predecessor of God's Eye: an interactive map that tracks satellites, ships and aircraft from public data sources.</p>
+          <div class="tags"><span>TypeScript</span><span>OSINT</span></div>
+          <a href="https://github.com/noaRoblesLevy/osint-worldmap" target="_blank" rel="noopener">Repository →</a>
+        </article>
+
+        <article class="card small" data-tags="network">
+          <h4>Coursework Labs</h4>
+          <p>Documented labs from my degree: networking, computer systems (Linux, LVM, TLS and PKI, AppArmor) and an ASP.NET CRUD application.</p>
+          <div class="tags"><span>Linux</span><span>Networking</span><span>.NET</span></div>
+          <span class="link-row"><a href="https://github.com/noaRoblesLevy/Netwerken-2" target="_blank" rel="noopener">Networks →</a> <a href="https://github.com/noaRoblesLevy/Compsys2_ISB" target="_blank" rel="noopener">Systems →</a></span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="wrap two-col">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Networking</h3>
+          <p>TCP/IP, IPv4 subnetting, IPv6 (dual-stack, SLAAC), VLANs and 802.1Q, inter-VLAN and static routing, VRRP, NAT, DHCP, DNS, stateful firewalls and DMZ design, OpenVPN, HAProxy, Keepalived, NetFlow/IPFIX, Cisco IOS, VyOS</p>
+        </div>
+        <div class="skill-group">
+          <h3>Security</h3>
+          <p>OSINT, attack-surface mapping, email security (SPF, DKIM, DMARC), TLS and PKI, AppArmor and SELinux, iptables, Wireshark, nmap, risk assessment</p>
+        </div>
+        <div class="skill-group">
+          <h3>Systems &amp; Cloud</h3>
+          <p>Linux (Debian, Ubuntu), bash, SSH, LVM, Apache, BIND, Docker and Compose, Google Cloud, Vercel, Neon, Cloudflare R2, CI/CD</p>
+        </div>
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <p>Python, TypeScript, JavaScript, Go, C#, Java, C++, SQL (PostgreSQL), Next.js, React, FastAPI, ASP.NET Core, Prisma, Git</p>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Quant</h3>
+          <p>pandas, NumPy, Polars, scikit-learn, PyTorch, backtesting, walk-forward optimization, Monte Carlo simulation, data warehousing and ETL</p>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>Dutch (native), English (fluent), French (basic)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="wrap two-col">
+      <h2 class="section-title">Education</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head"><h3>Bachelor of Mathematics</h3><span class="when">from 2027</span></div>
+          <p class="org">KU Leuven</p>
+        </li>
+        <li>
+          <div class="tl-head"><h3>Bachelor of Applied Computer Science</h3><span class="when">2024 to 2027</span></div>
+          <p class="org">Karel de Grote University, Antwerp · Infrastructure &amp; Security</p>
+          <p>Networks, computer systems, cybersecurity, databases, software development and an integration project (QN-Sentry).</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="lede">Looking for an intern or a developer who ships? I'm happy to hear from you.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:noa.robleslevy@student.kdg.be">noa.robleslevy@student.kdg.be</a>
+        <a class="btn" href="https://www.linkedin.com/in/noa-robles-levy-613924342" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/noaRoblesLevy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> Noa Robles Levy · Antwerp, Belgium</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
