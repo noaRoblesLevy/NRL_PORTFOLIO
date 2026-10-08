@@ -15,7 +15,7 @@
   --shadow: 0 1px 2px rgba(20, 20, 30, .04), 0 8px 24px rgba(20, 20, 30, .06);
   --radius: 14px;
   --font: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --display: "Syne", "Arial Black", sans-serif;
+  --display: "Inter Tight", "DM Sans", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   color-scheme: light;
 }
@@ -89,7 +89,7 @@ p { margin: 0; }
   display: flex; align-items: center; gap: 24px;
 }
 @media (min-width: 720px) { .nav-inner { padding: 12px 32px; } }
-.brand { font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--text); letter-spacing: .5px; }
+.brand { font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--text); letter-spacing: -.2px; }
 .brand span { color: var(--accent); }
 .brand:hover { text-decoration: none; }
 .nav-links { display: none; gap: 22px; margin-left: auto; }
@@ -122,8 +122,8 @@ p { margin: 0; }
 }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 4px var(--live-soft); }
 h1 {
-  font-family: var(--display); font-weight: 800;
-  font-size: clamp(40px, 8vw, 76px); letter-spacing: -1px; line-height: 1.02;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(40px, 8vw, 76px); letter-spacing: -2px; line-height: 1.04;
 }
 .lede { font-size: clamp(17px, 2.1vw, 20px); color: var(--muted); margin-top: 20px; max-width: 46ch; }
 .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
@@ -144,7 +144,7 @@ h1 {
 }
 .monogram {
   width: 88px; height: 88px; border-radius: 50%; margin-bottom: 16px;
-  display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 26px;
+  display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 26px; letter-spacing: -.5px;
   color: #fff; background: linear-gradient(135deg, var(--accent), #8a5cf6);
 }
 .hero-grid > * { min-width: 0; }
@@ -159,14 +159,15 @@ h1 {
 }
 @media (min-width: 800px) { .stats { grid-template-columns: repeat(4, 1fr); } }
 .stat { background: var(--surface); padding: 20px; }
-.stat b { display: block; font-family: var(--display); font-size: 30px; font-weight: 800; }
+.stat b { display: block; font-family: var(--display); font-size: 30px; font-weight: 700; letter-spacing: -.5px; }
 .stat span { font-size: 13.5px; color: var(--muted); }
 
 /* ---------- Sections ---------- */
 .section { padding: 64px 0; border-top: 1px solid var(--line); }
 @media (min-width: 900px) { .section { padding: 88px 0; } }
 .section.alt { background: var(--bg-alt); }
-.section-title { font-family: var(--display); font-weight: 800; font-size: clamp(26px, 3.6vw, 34px); letter-spacing: -.3px; }
+.section-title { font-family: var(--display); font-weight: 600; font-size: clamp(26px, 3.4vw, 32px); letter-spacing: -.6px; line-height: 1.1; }
+.two-col > .section-title { align-self: start; margin-top: -6px; }
 .two-col { display: grid; gap: 24px; }
 @media (min-width: 900px) { .two-col { grid-template-columns: 240px 1fr; gap: 48px; } }
 .prose p + p { margin-top: 16px; }
@@ -236,7 +237,7 @@ h1 {
   padding: 2px 7px; border-radius: 6px; margin-left: 4px;
   background: var(--star-soft); color: var(--star);
 }
-.subhead { font-family: var(--display); font-size: 20px; margin: 48px 0 20px; }
+.subhead { font-family: var(--display); font-size: 20px; font-weight: 600; letter-spacing: -.3px; margin: 48px 0 20px; }
 
 /* ---------- Skills ---------- */
 .skills { display: grid; gap: 24px; }
@@ -257,3 +258,7 @@ h1 {
   .reveal { opacity: 1; transform: none; transition: none; }
   .card, .btn { transition: none; }
 }
+
+/* The stats band carries its own border, so it takes the content width instead of the .wrap padding. */
+.wrap.stats { padding: 0; width: calc(100% - 32px); max-width: 1056px; }
+@media (min-width: 720px) { .wrap.stats { width: calc(100% - 64px); } }
